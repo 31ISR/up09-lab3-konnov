@@ -27,15 +27,9 @@ h1 {
 }
 .but {
     background-color: rgb(28, 45, 59);
-    height: 50px;
+    height: 90px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     scroll-margin-top: 1em;
-}
-#c {
-    border-radius: 10px 10px 10px 10px;
-    background-color: #79a895;
-    color: aliceblue;
-    font-size: large;
 }

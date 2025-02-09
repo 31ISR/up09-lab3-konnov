@@ -1,4 +1,11 @@
 from django.shortcuts import render
-def communities_list(req):
-    return render(req, 'communities/communities_list.html')
-# Create your views here.
+from .models import Communitie
+
+
+def communities_list(request):
+    communities = Communitie.objects.all().order_by('date')
+    return render(request, 'communities/communities_list.html',{'communities':communities})
+
+def communitie_page(request, slug):
+    communitie = Communitie.objects.get(slug=slug)
+    return render(request, 'communities/communitie_page.html', {'communitie': communitie})
