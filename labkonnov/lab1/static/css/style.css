@@ -13,9 +13,9 @@ main {
     place-content: center;
 }
 
-a {
+a  {
     text-decoration: none;
-    color: #81dbb8;
+    color: #10776f;
 }
 
 a:hover {
@@ -27,7 +27,7 @@ h1 {
 }
 .but {
     background-color: rgb(28, 45, 59);
-    height: 90px;
+    height: 150px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;

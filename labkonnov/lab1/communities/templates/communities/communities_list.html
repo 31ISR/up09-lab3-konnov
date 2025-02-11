@@ -7,9 +7,9 @@
 
     {% for communitie in communities %}
     <article class="Communities">
-        <h2>{{ communitie.title }}</h2>
-        <p>{{ communitie.date }}</p>
-        <p>{{ communitie.body }}</p>
+        <h2>
+            <a href="{%  url 'communities:page' slug=communitie.slug %}"> {{ communitie.title }} </a>
+        </h2>
     </article>
     {% endfor %}
 </section>

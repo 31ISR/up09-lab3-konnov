@@ -1,7 +1,6 @@
 {% extends 'layout.html' %} {% block title %} {{ post.title }} {% endblock %}
 {% block content %} 
 <section>
-
     <h1>{{ post.title }}</h1>
     <p>{{ post.date }}</p>
     <p>{{ post.body }}</p>
@@ -10,6 +9,7 @@
 <style>
     .banner {
         width: 50%;
+        height: 100%;
     }
     section {
             display: flex;
@@ -21,5 +21,7 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+    
 </style>
 {% endblock %}
